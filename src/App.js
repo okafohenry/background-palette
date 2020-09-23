@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
+import Header from './Header';
+import BackgroundImage from './BackgroundImage';
+import Copyright from './Copyright';
+
 import './App.css';
+
 
 const App = () => { 
 	
@@ -10,8 +15,6 @@ const App = () => {
 		setColor(color);
 	}
 
-
-
 	 const app = { 
 	 	position:`fixed`,
 	    top:`0px`,
@@ -20,19 +23,18 @@ const App = () => {
 	    right:`0px`,
 	 	background:`${color}`
 	 	} 	
-	 const header = {
-	 	color: `${color}`
-	 } 
+	 
 
 	  return (
 	    <div className="app" style={app}>
 	    	<div className="display" >
-		    	<h2 style={header} 
-		    		className="header">BackGround Palette</h2>
+	    		<Header color={color} />
 		    	<input type="text" 
 		    		className="color-input"
 		    		placeholder="change background color"
 		    		onChange={handleChange} />
+		    	<Copyright color={color} />
+		    	<BackgroundImage />
 	    	</div>      
 	    </div>
 	  );
