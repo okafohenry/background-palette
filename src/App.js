@@ -22,7 +22,7 @@ const App = () => {
 	    left:`0px`,
 	    right:`0px`,
 	 	background:`${color}`
-	 	} 	
+	 } 	
 	 
 
 	  return (

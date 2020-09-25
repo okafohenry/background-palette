@@ -6,7 +6,12 @@ const Copyright = (props) => {
 	}
 	return(
 		<div className="copyright">
-			<a href="https://github.com/okafohenry" style={copyright}>@Okafohenrie</a>
+			<a href="https://github.com/okafohenry"
+				target="_blank"
+				rel="noopener noreferrer"
+			 	style={copyright}>
+					<i className="fa fa-github"></i>
+			</a>
 		</div>
 	)
 }

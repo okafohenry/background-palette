@@ -7,7 +7,6 @@ const Header = (props) => {
 	return(
 		<span className="header-wrapper">
 			<h2 className="header" style={header}>Background Palette</h2>
-			<span className="dodge"></span>
 		</span>
 	)
 }
